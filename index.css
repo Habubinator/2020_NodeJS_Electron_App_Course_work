@@ -1,0 +1,477 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'VAG World Bold';
+	user-select: none;
+}
+html { 
+	overflow:  hidden; 
+}
+#mainmenulogo{
+	z-index: 0;
+	width: 56%;
+	margin-left: 22%;
+	margin-top: 20%;
+}
+#mainmenuplaybutton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to right, #878787, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    display: table;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+	transition: 0.5s;
+    }
+#mainmenuplaybutton:hover{
+	font-size: 20px;
+	margin-top: -5px;
+}
+#mainmenusettingbutton{
+	z-index: 99;
+	position: fixed;
+	width: 40px;
+	margin-top: 112.5px;
+	margin-left: 70px;
+}
+#sectionmenu{
+	display: block;
+	background-image: url(img/mainmenu/bgold.png);
+	background-size: contain;
+	width: 100%;
+	height: 720px;
+}
+#sectionsettings{
+	display: none;
+}
+#questionmaker{
+	display: none;
+}
+#gamemodemaker{
+	display: none;
+}
+
+@font-face {
+    font-family: 'VAG World Bold';
+    src: url('thefont/fonts/vag_world_bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('thefont/fonts/vag_world_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('thefont/fonts/vag_world_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('thefont/fonts/vag_world_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('thefont/fonts/vag_world_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('thefont/fonts/vag_world_bold.svg#vag_world_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+#sectiongame{
+	background-image: url(wwtbab/bg_test.png);
+	background-size: cover;
+	height: 750px;
+}
+
+.up{
+	padding-left: 70px;
+	padding-top: 70px;
+}
+
+.back{
+	width: 27px;
+	height: 27px;
+	background: no-repeat;
+	border: none;
+	margin-right: 350px;
+	outline: none;
+}
+#back{
+	width: 27px;
+	transition: 0.5s;
+}
+#back:hover{
+	margin-left: -5px;
+	margin-top: -5px;
+	width: 35px;
+}
+
+.smalllogo{
+	height: 64px;
+	margin-right: 200px;
+}
+
+.fifty50, .poll, .call{
+	margin: 20px;
+	background: no-repeat;
+	border: none;
+	outline: none;
+	transition: 1s;
+}
+
+#fifty, #poll, #call{
+	width: 34px;
+	transition: 1s;
+}
+
+#fifty:hover{
+	width: 45px;
+}
+#poll:hover{
+	width: 45px;
+}
+#call:hover{
+	width: 45px;
+}
+
+.moneyonmymind {
+	font-family: 'VAG World Bold';
+	font-size: 150px;
+	font-style: italic;
+	text-align: center;
+	margin-top: -5%;
+	margin-left: -5%;
+    color: rgba(255,255,255,0);
+}
+
+.gold{
+	-webkit-background-clip: text;
+    background-image: url('wwtbab/gold.png');
+}
+
+.test{
+ 	text-align: center;
+ 	margin-bottom: 0px;
+ }
+
+ .que{
+ 	font-size: 25px;
+ 	margin-top: -10px;
+    background: linear-gradient(to right, #5f5f5f, #d7d7d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.answear{
+	width: 380px;
+	height: 70px;
+    font-size: 15px;
+    background: no-repeat;
+    color: #9b9b9b;
+   	margin: 15px;
+   	line-height: 20px;
+   	border:  solid 2px #9b9b9b;
+   	border-radius: 30px;
+   	outline: none;  	
+   	vertical-align: top;
+   	transition: 0.5s;
+   	opacity: 1;
+}
+
+.opacityset{
+	opacity: 0;
+}
+
+.opacityhalf{
+	opacity: 0.25;
+}
+
+.answear:hover{
+	background: #9b9b9b;
+	color: #111017;
+}
+
+.answearred{
+	width: 380px;
+	height: 70px;
+    font-size: 15px;
+    background: #ff3737;
+    color: black;
+   	margin: 15px;
+   	border: none;
+   	line-height: 20px;
+   	border-radius: 30px;
+   	outline: none;  	
+   	vertical-align: top;
+   	transition: 0.5s;
+}
+
+.answeargreen{
+	width: 380px;
+	height: 70px;
+    font-size: 15px;
+    background: #a8ff4e;
+    color: black;
+   	margin: 15px;
+   	border: none;
+   	line-height: 20px;
+   	border-radius: 30px;
+   	outline: none;  	
+   	vertical-align: top;
+   	transition: 0.5s;
+}
+
+
+.upset{
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.backset{
+  width: 27px;
+  height: 27px;
+  background: no-repeat;
+  border: none;
+  margin-right: 450px;
+  outline: none;
+}
+
+.nastroiki{
+  font-size: 45px;  
+  color: white;
+  text-align: center;
+}
+
+.setset, .queset{
+  margin-top: 4%;
+  color: white;
+  width: 38%;
+  border: solid 2px white;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 7%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.txttt{
+  font-size: 25px;
+}
+
+.setset{
+  float: left;
+}
+
+.queset{
+  float: left;
+}
+
+#sectionsettings{
+  background-image: url(wwtbab/bg_test.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  width: 1280px;
+  height: 720px;
+}
+
+#sectionsettings select{
+  margin-top: 10px;
+  background: no-repeat;
+  border: solid 2px white;
+  border-radius: 30px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+}
+
+#sectionsettings option{
+  color: black;
+  outline: none;
+}
+
+.add,.edit,.delete{
+	background: no-repeat;
+	width: 27px;
+	height: 27px;
+	margin-top: 20px;
+	border: none;
+	outline: none;
+	margin-right: 5px;
+	translate: 0.5s;
+	opacity: 1;
+}
+
+.add{
+  background-image: url(wwtbab/add.png);
+}
+
+.edit{
+  background-image: url(wwtbab/edit.png);
+}
+
+.delete{
+  background-image: url(wwtbab/delete.png)
+}
+
+.add:hover{
+	opacity: 0.75;
+}
+.edit:hover{
+	opacity: 0.75;
+}
+.delete:hover{
+	opacity: 0.75;	
+}
+#setoptn1,#setoptn2,#setoptn3,#setoptn4,#setoptn5{
+	display: none;
+}
+#queoptn1,#queoptn2,#queoptn3,#queoptn4,#queoptn5,
+#queoptn6,#queoptn7,#queoptn8,#queoptn9,#queoptn10,
+#queoptn11,#queoptn12,#queoptn13{
+	display: none;
+}
+
+#hints{
+	position: absolute;
+	z-index: 99;
+	margin-left: 1000px;
+}
+		.thehint{
+			font-size: 15px;
+			color: white;
+			padding: 20px;
+			width: 200px;
+			border: 2px solid white;
+			border-radius: 30px;
+			height: 150px;
+			margin: 10px;
+			opacity: 1;
+			background-color: black;
+		}
+		#friend,#zal{
+			transition: 1s;
+		}
+		.result{
+			width: 35px;
+			margin-left: 10px;
+		}
+
+		.real{
+			background: #a8ff4e;
+			height: 120px;
+			color: black;
+		}
+
+		.var{
+			height: 125px;
+			float: left;
+			text-align: center;
+		}
+
+		.a, .b, .c{
+			background: linear-gradient(to bottom, #2f2f2f, #ededed);
+		}
+
+		.a{
+			height: 72px;
+			margin-top: 48px;
+		}
+
+		.b, .c{
+			height: 24px;
+			margin-top: 96px;
+		}
+
+		.green{
+			color:  #a8ff4e;
+		}
+
+		.opinion{
+			margin-top: 20px;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: right;
+		}
+		figcaption{
+			margin-left: 10px;
+		}
+		#sectiondefeatscreen, #sectionwinscreen{
+			width:1280px;
+			height: 720px;
+			background-image: url(wwtbab/bg.png);
+			background-size: cover;
+		}
+
+		#questionchange, #modechange{
+			width:1280px;
+			height: 720px;
+			background-image: url(wwtbab/bg_test.png);
+			background-size: cover;	
+		}
+
+#questionchange .up, #modechange .up{
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+#questionchange .back, #modechange .back{
+  width: 27px;
+  height: 27px;
+  background: no-repeat;
+  border: none;
+  margin-right: 480px;
+  outline: none;
+}
+
+#questionchange .nastroiki, #modechange .nastroiki{
+  font-size: 45px;  
+  color: white;
+  text-align: center;
+}
+
+#questionchange .answear, #modechange .answear{
+  width: 40%;
+  padding-left: 10px;
+  height: 70px;
+  color: white;
+  margin-top: 10px;
+  background: no-repeat;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-align: center;
+  margin-right: 30px;
+  outline: none;
+}
+
+.vvedite{
+  width: 40%;
+  margin-top: 10px;
+  height: 70px;
+  color: white;
+  padding-left: 10px;
+  background: no-repeat;
+  border: 2px solid white;
+  border-radius: 30px;
+  outline: none;
+  margin-bottom: 84px;
+}
+
+.radio{
+  outline: none;
+  margin-right: 15px;
+  transform: translate(0px,28px);
+}
+
+.main{
+  text-align: center;
+}
+
+.save{
+  width: 20%;
+  height: 70px;
+  color: white;
+  margin-top: 3%;
+  background: no-repeat;
+  border: 2px solid white;
+  border-radius: 30px;
+  outline: none;
+  text-align: center;
+}
+
+.save:hover{
+  background: white;
+  color: black;
+  transition: 0.5s;
+}

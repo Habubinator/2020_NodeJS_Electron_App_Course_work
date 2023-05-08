@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wwtbab 0.5</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<section id="sectionmenu">
+		<img src="img/mainmenu/setting.png" id="mainmenusettingbutton" onclick="GoTo(`Settings`)">
+		<img src="img/mainmenu/logo.png" id="mainmenulogo">
+		<button id="mainmenuplaybutton" onclick="GoTo(`Game`)">НАЖМИТЕ, ЧТОБЫ НАЧАТЬ</button>
+	</section>
+
+	<section id="sectionsettings">
+		<div class="upset">
+	    <button class="backset"><img  src="wwtbab/back.png" width="24px" onclick="GoTo(`Menu`)"></button>
+	    <span class="nastroiki">Настройки</span>
+	  </div>
+
+	  <div class="setset">
+	   <p class="txttt">Режим</p>
+	   <select size="1" class="setoptn" id="setoptn" onchange="writeQuestions()">
+	   		  <option selected disabled>Выберите режим</option>
+	          <option id="setoptn1"></option>
+	          <option id="setoptn2"></option>
+	          <option id="setoptn3"></option>
+	          <option id="setoptn4"></option>
+	          <option id="setoptn5"></option>
+	     </select><br>
+
+	      <button class="add" onclick="SettingsSwitch(`Mode`,`add`)"></button>
+	      <button class="edit" onclick="SettingsSwitch(`Mode`,`edit`)"></button>
+	      <button class="delete" onclick="SettingsSwitch(`Mode`,`delete`)"></button> 
+	  </div>
+
+	  <div class="queset">
+	  	<p class="txttt">Вопрос</p>
+	  	<select size="1" class="queoptn" id="queoptn" required>
+	          <option selected  disabled>Выберите вопрос</option>
+	          <option value="" id="queoptn1"></option>
+	          <option value="" id="queoptn2"></option>
+	          <option value="" id="queoptn3"></option>
+	          <option value="" id="queoptn4"></option>
+	          <option value="" id="queoptn5"></option>
+	          <option value="" id="queoptn6"></option>
+	          <option value="" id="queoptn7"></option>
+	          <option value="" id="queoptn8"></option>
+	          <option value="" id="queoptn9"></option>
+	          <option value="" id="queoptn10"></option>
+	          <option value="" id="queoptn11"></option>
+	          <option value="" id="queoptn12"></option>
+	          <option value="" id="queoptn13"></option>
+	      </select><br>
+
+	      <button class="add" onclick="SettingsSwitch(`Question`,`add`)"></button>
+	      <button class="edit" onclick="SettingsSwitch(`Question`,`edit`)"></button>
+	      <button class="delete" onclick="SettingsSwitch(`Question`,`delete`)"></button>
+	</section>
+
+	<section id="sectiongame">
+		<div class="up">
+		<button class="back" onclick="GoTo(`Menu`)"><img  id='back'src="wwtbab/back.png"></button>
+		<img class="smalllogo" src="wwtbab/smalllogo.png">
+
+		<button class="fifty50" id="fifty50" onclick="AnswerHelp(`5050`)"><img src="wwtbab/5050.png" id="fifty"></button>
+		<button class="poll" id="poll" onclick="AnswerHelp(`poll`)"><img src="wwtbab/poll.png" id="poll"></button>
+		<button class="call" id="call" onclick="AnswerHelp(`call`)"><img src="wwtbab/call.png" id="call"></button>
+	</div>
+	<div id="hints">
+		<div class="thehint" id="zal">
+			<div class="var">
+				<div id="helppoll1"></div>
+			    <figcaption id="figcaption1">А</figcaption>	
+			</div>
+
+			<div class="var">
+				<div id="helppoll2"></div>
+			    <figcaption id="figcaption2">Б</figcaption>
+			</div>
+
+			<div class="var">
+				<div id="helppoll3"></div>
+			    <figcaption id="figcaption3">В</figcaption>
+			</div>
+
+			<div class="var">
+				<div id="helppoll4"></div>
+				<figcaption id="figcaption4">Г</figcaption>
+			</div>
+		</div>
+		<div class="thehint" id="friend">
+		<p class="green">Друг:</p>
+		<p class="opinion">"Хм... Я всё-таки предполагаю, что это варианты 
+			<span class="green" id="answer0"></span> или <span class="green" id="answer1"></span>"</p>
+		</div>
+	</div>
+	<div class="moneyonmymind" id='moneyonmymind' role="presentation">
+		<div class="gold" id="goldsumm">
+			<p>100 000 $</p>
+		</div>
+    </div>
+
+    <div class="test">
+    	<p class="que" id="gamequestion">Как стать миллионером?</p>
+    	
+    	<button class="answear" id="gameanswrbtn1" onclick="Answer(1)">Никак</button>
+    	<button class="answear" id="gameanswrbtn2" onclick="Answer(2)">Есть как</button><br>
+    	<button class="answear" id="gameanswrbtn3" onclick="Answer(3)">Работать</button>
+    	<button class="answear" id="gameanswrbtn4" onclick="Answer(4)">Выйти замуж или пожениться на богатом_ой</button>
+    </div>
+
+	</section>
+	
+	
+	<section id="sectiondefeatscreen">
+		<div class="up">
+		<button class="back" onclick="GoTo(`Menu`)"><img  src="wwtbab/back.png" width="24px"></button>
+
+		</div>
+		<div class="test">
+			    	<p class="que">Вы проиграли! <br>Набранная вами сумма:</p>
+
+				</div>
+		<div class="moneyonmymind" role="presentation">
+			<div class="gold">
+				<p id="defeatsum"></p>
+			</div>
+	    </div>
+	</section>
+	<section id="sectionwinscreen">
+				<div class="up">
+				<button class="back" onclick="GoTo(`Menu`)"><img  src="wwtbab/back.png" width="24px"></button>
+
+				</div>
+				<div class="test">
+					    	<p class="que">Поздравляем! <br>Вы стали Миллионером!</p>
+						</div>
+				<div class="moneyonmymind" role="presentation">
+					<div class="gold">
+						<p id="defeatsum">1 000 000 $</p>
+					</div>
+			    </div>
+		</section>
+	<section id="modechange">
+		  <div class="up">
+		    <button class="back" onclick="GoTo(`Settings`)"><img  src="wwtbab/back.png" width="24px"></button>
+		    <span class="nastroiki">Режим</span>
+		  </div>
+
+		  <div class="main">
+		    <h2>Введите режим</h2>
+		    <input type="text" name="" class="vvedite" id="ModeInp"><br>
+		    <button class="save" onclick="SaveMode()">Сохранить</button>
+		 </div>
+	</section>
+
+	<section id="questionchange">
+		  <div class="up">
+		    <button class="back" onclick="GoTo(`Settings`)"><img  src="wwtbab/back.png" width="24px"></button>
+		    <span class="nastroiki">Вопрос</span>
+		  </div>
+
+		  <div class="main">
+		    <input type="text" class="answear" value="" style="width: 50%;" id="questiontext" 
+		    placeholder="Введите вопрос, а ответы ниже. Hе забудьте указать правильный ответ"><br>
+		    <input  class="radio" type="radio" name="checkright" id="settingradio1"><input type="text" class="answear" id="settingsAns1" value="">
+
+		    <input  class="radio" type="radio" name="checkright" id="settingradio2"><input type="text" class="answear" id="settingsAns2" value=""><br>
+
+		    <input class="radio"  type="radio" name="checkright" id="settingradio3"><input type="text" class="answear" id="settingsAns3" value="">
+		    
+		    <input class="radio"  type="radio" name="checkright" id="settingradio4"><input type="text" class="answear" id="settingsAns4" value="">
+
+		    <button class="save" onclick="SaveQuest()">Сохранить</button>
+		  </div>
+	</section>
+</body>
+	<script src="jss/gamescript.js"></script>
+	<script src="jss/settingsscript.js"></script>
+	<script src="jss/menuscript.js"></script>
+
+</html>

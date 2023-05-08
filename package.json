@@ -1,0 +1,11 @@
+{
+  "name": "How_to_become_millionaire",
+  "version": "0.8.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^11.2.3"
+  }
+}
